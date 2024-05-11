@@ -17,39 +17,39 @@ test.describe("Buttons", () => {
 
   // ------------------------------ 👀
   // these tests needs to be fixed - add locator to buttons
-  test.skip("button name should be clicked", async () => {
+  test("button name should be clicked", async () => {
     await pages.buttonPage.buttonByName.click({ timeout: 1000 });
     await expect(pages.buttonPage.buttonByName).toHaveClass(/btn-success/);
   });
 
-  test.skip("button class should be clicked", async () => {
+  test("button class should be clicked", async () => {
     await pages.buttonPage.buttonByClass.click({ timeout: 1000 });
     await expect(pages.buttonPage.buttonByClass).toHaveClass(/btn-success/);
   });
 
-  test.skip("button text should be clicked", async () => {
+  test("button text should be clicked", async () => {
     await pages.buttonPage.buttonByText.click({ timeout: 1000 });
     await expect(pages.buttonPage.buttonByText).toHaveClass(/btn-success/);
   });
 
-  test.skip("button XPath should be clicked", async () => {
+  test("button XPath should be clicked", async () => {
     await pages.buttonPage.buttonByXPath.click({ timeout: 1000 });
     await expect(pages.buttonPage.buttonByXPath).toHaveClass(/btn-success/);
   });
 
-  test.skip("button partial text should be clicked", async () => {
+  test("button partial text should be clicked", async () => {
     await pages.buttonPage.buttonByPartialText.click({ timeout: 1000 });
     await expect(pages.buttonPage.buttonByPartialText).toHaveClass(
       /btn-success/,
     );
   });
 
-  test.skip("button data-qa should be clicked", async () => {
+  test("button data-qa should be clicked", async () => {
     await pages.buttonPage.buttonByDataQA.click({ timeout: 1000 });
     await expect(pages.buttonPage.buttonByDataQA).toHaveClass(/btn-success/);
   });
 
-  test.skip("button outside div should be clicked", async () => {
+  test("button outside div should be clicked", async () => {
     await pages.buttonPage.buttonOutsideDiv.click({ timeout: 1000 });
     await expect(pages.buttonPage.buttonOutsideDiv).toHaveClass(/btn-success/);
   });

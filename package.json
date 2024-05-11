@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx playwright test --reporter=list",
     "test:codegen": "npx playwright codegen https://automat.ostrava.digital",
-    "test:headed": "npx playwright test --ui",
+    "test:ui": "npx playwright test --ui",
     "format": "prettier --write ."
   },
   "keywords": [],
