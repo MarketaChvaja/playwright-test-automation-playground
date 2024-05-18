@@ -10,7 +10,19 @@ test.describe("Cats", () => {
     await pages.catsPage.visit();
   });
 
-  test("template for you", async ({ page }) => {
-    //pises kod sem :)
+  test("test 1", async ({ page }) => {
+    await pages.catsPage.addCatButton.click();
+
+    await expect(pages.catsPage.catCards).toHaveCount(1);
+    
   });
+  test.only("test 2", async ({ page }) => {
+    await pages.catsPage.addCatButton.click();
+
+    await expect(pages.catsPage.catCounter).toHaveText("1");
+    
+  });
+
+
+
 });
